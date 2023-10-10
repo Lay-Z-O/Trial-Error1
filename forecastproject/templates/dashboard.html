@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/dashboard.css'%}"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Dashboard Page</title>
+  </head>
+  <body>
+    <section id="menu">
+      <div class="logo">
+        <img src="{% static 'img/logo.png' %}" alt="Logo" />
+        <div class="logo-name">
+          <span class="logo-desc">Copra</span>
+          <span class="logo-desc-sub">Price Forecasting</span>
+        </div>
+      </div>
+
+      <div class="items">
+        <li>
+          <i class="fa-solid fa-chart-simple"></i><a href="#">Overview</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-searchengin"></i><a href="#">Forecast</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-circle-info"></i><a href="#">Information</a>
+        </li>
+        <li><i class="fa-solid fa-address-book"></i><a href="#">Contact</a></li>
+
+        <li class="items-below">
+          <i class="fa-solid fa-user"></i><a href="#">Profile</a>
+        </li>
+        <li><i class="fa-solid fa-arrow-left"></i><a href="#">Logout</a></li>
+      </div>
+    </section>
+
+    <section id="navbar">
+      <div class="navigation">
+        <div class="profile">
+          <i class="fa-solid fa-wrench"></i>
+          <i class="fa-solid fa-bell"></i>
+        </div>
+      </div>
+      
+    </section>
+    
+  </body>
+</html>
